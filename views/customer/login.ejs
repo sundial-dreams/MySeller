@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="/resource/fa/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link href="/customer/css/comm.css" rel="stylesheet">
+        <link href="/customer/css/login.css" rel="stylesheet">
+        
+        <script src='/resource/js/jquery.min.js'></script>
+        <script src='/resource/js/daydream.js'></script>
+        <script src='/customer/js/login.js'></script>
+    </head>
+    <body>
+        <section id="login">
+             <div class="logo">
+              <i class="fa fa-mixcloud"></i>
+              <div class="message-box">
+               <%=error%>
+              </div>
+             </div>
+             <form method="POST" action="/customer/">
+              <input type="text" name='account' placeholder="输入账号" />
+              <input type="password" name='password' placeholder="输入密码" />
+              
+               <button>登入</button>
+             </form>
+             <div class="bottom">
+                 <a href="/customer/forget">忘记密码</a>
+                 <a href="/customer/eroll">注册</a>
+             </div>
+             <footer>
+                 欢迎使用
+             </footer>
+        </section>    
+    </body>
+</html>

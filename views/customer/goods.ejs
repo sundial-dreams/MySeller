@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/resource/fa/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="/customer/css/comm.css" rel="stylesheet">
+    <link href="/customer/css/goods.css" rel="stylesheet">
+
+    <script src='/resource/js/jquery.min.js'></script>
+    <script src='/resource/js/daydream.js'></script>
+    <script src='/customer/js/goods.js'></script>
+</head>
+<span id="data">
+    <%=result.id%>
+</span>
+
+<body>
+    <section id="goods">
+        <section class="head">
+            <a href="/customer/shop/<%=result.seller_id%>">
+                <i class="fa fa-angle-left"></i>
+            </a>
+
+            <img src="/image/seller/<%=result.seller_id%>/goods/<%=result.image%>" />
+        </section>
+        <section class="context">
+            <div class="select">
+                <button class="main">商品</button>
+                <button>评价</button>
+                <button>详情</button>
+            </div>
+            <div class="view">
+                <div class="head">
+                    <h2>价格:&NonBreakingSpace;
+                        <%=result.price%>
+                    </h2>
+                    <h3>名称:&nbsp;
+                        <%=result.name%>
+                    </h3>
+                    <h4>销量11</h4>
+                </div>
+                <div class="middle">
+                    <h3>描述:&nbsp;
+                        <%=result.description%>
+                    </h3>
+
+                    <h3>库存:&nbsp;
+                        <%=result.number%>
+                    </h3>
+                    <h3>分类:&nbsp;
+                        <%=classify.classify%>
+                    </h3>
+
+                </div>
+            </div>
+            <div class="comment-view">
+                <h3>商品评价</h3>
+                <ul class="comment-ul">
+                   
+                </ul>
+            </div>
+            <div class="info-view">
+                <h3>商品名称</h3>
+                <p>
+                    <%=result.name%>
+                </p>
+                <h3>商品价格</h3>
+                <p>$
+                    <%=result.price%>
+                </p>
+                <h3>规格参数</h3>
+                <p>ab</p>
+                <h3>详情</h3>
+                <p>
+                    <%=result.description%>
+                </p>
+                <h3>所属分类</h3>
+                <p>
+                    <%=classify.classify%>
+                </p>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="left">
+                <button>
+                    <i class="fa fa-share-square"></i>
+                </button>
+                <button>
+                    <i class="fa fa-info-circle"></i>
+                </button>
+                <button>
+                    <i class="fa fa-star-half-o"></i>
+                </button>
+            </div>
+            <div class="right">
+                <button>加入购物车</button>
+                <button>立即购买</button>
+            </div>
+        </section>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+html{width: 100%;height: 100%;}
+body{ width: 100%; height:100%;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {margin:0;padding:0}  /* 初始化标签在所有浏览器中的margin、padding值 */
+fieldset,img {border:0 none}  /* 重置fieldset（表单分组）、图片的边框为0*/
+dl,ul,ol,menu,li {list-style:none}   /* 重置类表前导符号为onne,menu在HTML5中有效 */
+blockquote, q {quotes: none}   /* 重置嵌套引用的引号类型 */
+blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}  /* 重置嵌套引用*/
+input,select,textarea,button {vertical-align:middle; outline: none;}  /* 重置表单控件垂直居中*/
+button {border:0 none;background-color:transparent;cursor:pointer}  /* 重置表单button按钮效果 */
+body {background:#fff}   /* 重置body 页面背景为白色 */
+body,th,td,input,select,textarea,button {font-size:12px;line-height:1 ;color:#666} /* 重置页面文字属性 */
+a {color:#666;text-decoration:none}  /* 重置链接a标签 */
+a:active, a:hover {text-decoration:none}   /* 重置链接a标签的鼠标滑动效果 */
+address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}  /* 重置样式标签的样式 */
+caption {display:none;}    /* 重置表格标题为隐藏 */
+table {width:100%;border-collapse:collapse;border-spacing:0;table-layout:fixed;}    /* 重置table属性 */
+img{vertical-align:top}  /* 图片在当前行内的垂直位置 */
+a {outline: none;}  
+section{margin: 0;padding: 0;display: block}
+.clear{clear: both;}
+.clearfix:before,.clearfix:after{content: '';display: table;}
+.clearfix:after{clear: both;}
+::-webkit-scrollbar {
+    background-color: transparent;
+    width: 3px;
+    height: 3px;
+}
+::-webkit-scrollbar-button {
+    background-color: silver;
+}
+::-webkit-scrollbar-thumb {
+    background-color: silver;
+}
+::-webkit-scrollbar-track {
+    background-color: #40464c;
+}
+::selection {
+    background-color: #b3d4fc;
+    color: #fff;
+    text-shadow: none;
+}
+
+@font-face{
+    font-family: 'BenMo';
+    src: url("BenMoJingYuan-2.ttf") format('truetype');
+}
+
+@keyframes loading{
+    from{
+       opacity: 1;
+    }to{
+       opacity: 0;
+    }
+}
+
+*{
+    font-family: 'BenMo';
+}
+section.head{
+    width: 100%;
+    height: 50px;
+    background: blueviolet;
+}
+section.head .logo{
+    width: 30%;
+    height: 100%;
+    line-height: 50px;
+    font-size: 15px;
+    color: white;
+    display: inline-block;
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+section.head .logo i{
+    font-size: 20px;
+}
+section.head .user{
+    width: 30%;
+    height: 100%;
+    float: right;
+    line-height: 50px;
+}
+section.head a{
+    width: 100%;
+    height: 100%;
+}
+section.head .user h3,
+section.head .user img
+{
+    width: 20%;
+
+    color: white;
+    display: block;
+    float: right;
+}
+section.head .user img{
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 2px solid white;
+    margin-right: 20px;
+}
+section.context{
+    width: 100%;
+    height: 90%;
+
+}
+section.context>.left{
+    width: 10%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    float: left;
+}
+section.context>.left ul{
+
+  width: 100%;
+  height: 100%;
+
+}
+section.context>.left ul li{
+    width: 100%;
+    height: 10%;
+    position: relative;
+}
+section.context>.left ul li a{
+    width: 95%;
+    height: 90%;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    font-size: 16px;
+    
+}
+section.context>.left ul li a.main{
+    color: blueviolet;
+}
+section.context>.left ul li a i{
+    font-size: 22px;
+}
+section.context>.right{
+   width: 90%;
+   height: 100%;
+   box-sizing: border-box;
+   padding: 20px;
+   float: left;
+   overflow-y: scroll;
+   overflow-x: hidden;
+}

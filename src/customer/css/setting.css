@@ -1,0 +1,134 @@
+section#setting{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.11);
+
+}
+
+section.head{
+    width: 100%;
+    height: 40px;
+    background: blueviolet;
+}
+section.head a{
+    display: inline-block;
+    height: 100%;
+    line-height: 40px;
+    color: white;
+    font-size: 16px;
+    margin-left: 10px;
+}
+section.head a i{
+    font-size: 20px;
+}
+section.user{
+    width: 100%;
+    height: 90px;
+    box-sizing:border-box;
+    padding: 10px;
+    background: white;
+}
+section.user a{
+    display: block;
+    width: 100%;
+    height: 100%;
+   
+}
+section.user a .left{
+    width: 70%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+section.user a .left img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+section.user a .left .info{
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 70px;
+    color: gray;
+}
+section.user a .left .info h3,
+section.user a .left .info h4{
+    margin:5px;
+}
+section.user a .right{
+    width: 30%;
+    height: 100%;
+    float: left;
+    text-align: right;
+    line-height: 80px;
+ 
+    position: relative;
+}
+section.user a .right i{
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    font-size: 25px;
+}
+section.address{
+    margin-top: 20px;
+}
+section.address,
+section.account,
+section.currency{
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    padding: 10px;
+    background: white;
+    border:none;
+ }
+
+section.address a,
+section.account a,
+section.currency a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    line-height: 20px;
+    position: relative;
+}
+section.address a i,
+section.account a i,
+section.currency a i{
+   position: absolute;
+   top: 50%;
+   right: 5px;
+   transform: translateY(-50%);
+}
+section.bottom{
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    
+}
+section.bottom  a{
+    display: inline-block;
+    width: 90%;
+    height: 90%;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 30px;
+    background: blueviolet;
+    font-size: 15px;
+    color: white;
+    box-shadow: 0 0 20px -3px rgba(0,0,0,.3);
+    
+}
+

@@ -1,0 +1,186 @@
+section#index{
+    width: 100%;
+    height: 100%;
+
+}
+
+section.context .top{
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    padding: 20px;
+
+}
+section.context .top>.left{
+    width: 65%;
+    height: 100%;
+       float: left;
+
+}
+section.context .top>.left h2{
+    width: 100%;
+    color: rgba(0,0,0,.8);
+
+}
+section.context .top>.left div{
+    width: 33.3%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    display: block;
+    float: left;
+    text-align: center;
+    padding-top: 70px;
+}
+section.context .top>.left div h1{
+    color: blueviolet;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+section.context .top>.left div h1.three{
+    color: coral;
+}
+section.context .top>.left div h1.two{
+    color: fuchsia;
+}
+section.context .top>.left div h4{
+    color: rgba(0,0,0,.5);
+    font-size: 18px;
+}
+
+
+
+section.context .top>.right{
+    width: 35%;
+    height: 100%;
+    float: left;
+
+}
+section.context .top>.right h2{
+    width: 100%;
+    color: rgba(0,0,0,.8);
+
+}
+section.context .top>.right div{
+    width: 50%;
+    height: 100%;
+   
+    box-sizing: border-box;
+    padding: 20px;
+    display: block;
+    float: left;
+    text-align: center;
+    padding-top: 70px;
+}
+section.context .top>.right div h1{
+    color: slategray;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+section.context .top>.right div h1.two{
+    color: aqua;
+}
+section.context .top>.right div h4{
+    color: rgba(0,0,0,.5);
+    font-size: 18px;
+}
+
+section.bottom{
+    width: 100%;
+    height: 50%;
+    
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+section.context .bottom>.left{
+    width: 65%;
+    height: 100%;
+    float: left;
+
+
+}
+section.context .bottom>.left h2{
+    width: 100%;
+    color: rgba(0,0,0,.8);
+
+}
+section.context .bottom>.left div{
+    width: 30%;
+    height: 100%;
+    margin-left: 10%;
+    box-sizing: border-box;
+    padding: 20px;
+    display: inline-block;
+    text-align: center;
+    padding-top: 70px;
+     
+}
+
+section.context .bottom>.left div h1{
+    color: slategray;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+section.context .bottom>.left div h1.two{
+    color: aqua;
+
+}
+
+section.context .bottom>.left div h4{
+    color: rgba(0,0,0,.5);
+    font-size: 18px;
+}
+section.context .bottom>.right{
+    width: 35%;
+    height: 100%;
+    float: left;
+}
+
+section.context .bottom>.right{
+    width: 65%;
+    height: 100%;
+    float: left;
+
+
+}
+section.context .bottom>.right h2{
+    width: 100%;
+    color: rgba(0,0,0,.8);
+
+}
+section.context .bottom>.right div{
+    width: 30%;
+    height: 100%;
+    margin-left: 10%;
+    box-sizing: border-box;
+    padding: 20px;
+    display: inline-block;
+    text-align: center;
+    padding-top: 70px;
+     
+}
+
+section.context .bottom>.right div h1{
+    color: cadetblue;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+section.context .bottom>.right div h1.two{
+    color: aqua;
+
+}
+
+section.context .bottom>.right div h4{
+    color: rgba(0,0,0,.5);
+    font-size: 18px;
+}
+section.context .bottom>.right{
+    width: 35%;
+    height: 100%;
+   float: left;
+}

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/resource/fa/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="/seller/css/comm.css" rel="stylesheet">
+    <link href="/seller/css/goods.css" rel="stylesheet">
+
+    <script src='/resource/js/jquery.min.js'></script>
+    <script src='/resource/js/daydream.js'></script>
+    <script src='/seller/js/goods.js'></script>
+</head>
+
+<body>
+    <section id="goods">
+        <section class="head">
+            <div class="logo">
+                <i class="fa fa-mixcloud"></i>
+                &nbsp; POS销售系统(商家版)
+            </div>
+            <div class="user">
+                <a href="/seller/setting">
+                    <img src="/image/seller/<%=seller_data.id%>/head/<%=seller_data.shop_image%>" />
+                </a>
+                <h3>
+                    <%=seller_data.shop_name%>
+                </h3>
+            </div>
+        </section>
+        <section class="context">
+            <section class="left">
+                <ul>
+                    <li>
+                        <a href="/seller/index">
+                            <i class="fa fa-home"></i>&nbsp;&nbsp;首页</a>
+                    </li>
+                    <li>
+                        <a href="/seller/goods/all" class="main">
+                            <i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;商品</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-file-text-o"></i>&nbsp;&nbsp;订单</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-smile-o"></i>&nbsp;&nbsp;顾客</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-cny"></i>&nbsp;&nbsp;财务</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-database"></i>&nbsp;&nbsp;数据</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-comments-o"></i>&nbsp;&nbsp;消息</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-list-alt"></i>&nbsp;&nbsp;销售</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-users"></i>&nbsp;&nbsp;我的会员</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-info-circle"></i>&nbsp;&nbsp;帮助</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="right">
+                <div class="top">
+                    <div class="left">
+                        <form action="#" method="POS">
+                            <input type="text" placeholder="输入商品" />
+                            <button>搜索</button>
+                        </form>
+                    </div>
+                    <div class="right">
+                        <ul class="classify-ul">
+                            <li>
+                                <a href="/seller/goods/all" <%if(elect==='all' ){%> class="main"
+                                    <%}%> > 全部商品
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/seller/goods/addGoods" <%if(elect==='addGoods' ){%> class="main"
+                                    <%}%>> 添加商品
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/seller/goods/addClassify" <%if(elect==='addClassify' ){%> class="main"
+                                    <%}%> > 添加分类
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <%if(elect === 'all'){%>
+                    <div class="goods-list">
+                        <ul class="goods-ul">
+                            <%for(let [k,va] of map){%>
+                                <li>
+                                    <h1>
+                                        <%=k%>&nbsp;&nbsp;
+                                            <button>查看</button>
+                                    </h1>
+                                    <ul class="item-ul">
+                                        <%for(let v of va){%>
+                                            <li>
+                                                <div class="top">
+                                                    <div class="left">
+                                                        <h1>
+                                                            <%=v.name%>
+                                                        </h1>
+                                                        <h2>
+                                                            <i class="fa fa-cny"></i>
+                                                            <%=v.price%>
+                                                        </h2>
+
+                                                        <h2 class="total">
+                                                            <%=v.number%>件</h2>
+
+                                                    </div>
+                                                    <div class="right">
+                                                        <img src="/image/seller/<%=seller_data.id%>/goods/<%=v.image%>" />
+                                                    </div>
+                                                </div>
+                                                <div class="bottom">
+                                                    <button>查看</button>
+                                                    <button>编辑</button>
+                                                </div>
+                                                <span class="hiddenData">
+                                                    <%=v.id%>
+                                                </span>
+                                            </li>
+                                            <%}%>
+                                                <%if(va.length===0){%>
+                                                    <li class="item-message">
+                                                        <h1>未添加商品</h1>
+                                                    </li>
+                                                    <%}%>
+                                    </ul>
+                                </li>
+                                <%}%>
+                                    <%if(map.size === 0){%>
+                                        <li class="message">
+                                            <h1>亲，您还没有商品</h1>
+                                        </li>
+                                        <%}%>
+                        </ul>
+                    </div>
+                    <%}%>
+                        <%if(elect === 'addGoods'){%>
+                            <div class="addGoods">
+                                <div class="top">
+                                    <h1>添加商品</h1>
+                                </div>
+                                <h2 class="error">
+
+                                </h2>
+                                <div class="bottom">
+                                    <form action="/seller/goods/addGoods" method="POST" enctype="multipart/form-data">
+                                        <div>
+                                            <span>商品图片</span>
+                                            <input type="file" name="goods_image" />
+                                        </div>
+                                        <div>
+                                            <span>商品名称</span>
+                                            <input type="text" name="goods_name" placeholder="输入商品名称" />
+                                        </div>
+                                        <div>
+                                            <span>商品类别</span>
+                                            <input type="text" name="goods_classify" placeholder="输入商品类别"/>
+                                        </div>
+                                        <div class="textarea">
+                                            <span>商品描述</span>
+                                            <textarea name="goods_info" placeholder="输入商品信息">
+
+                                            </textarea>
+                                        </div>
+                                        <div>
+                                            <span>商品数量</span>
+                                            <input type="text" name="goods_number" placeholder="输入商品数量"/>
+                                        </div>
+                                        <div>
+                                            <span>商品价格</span>
+                                            <input type="text" name='goods_price' placeholder="输入商品价格"/>
+                                        </div>
+                                        <button>添加</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <%}%>
+                                <%if(elect==='addClassify'){%>
+                                    <div class="addClassify">
+                                        <h1>添加分类</h1>
+                                        <h2 class="error">
+
+                                        </h2>
+                                        <form action="/seller/goods/addClassify" method="POST">
+                                            <div>
+                                                <span>分类名</span>
+                                                <input name='classify_name' type="text" placeholder="输入类别名" />
+                                            </div>
+                                            <div class="textarea">
+                                                <span>分类描述</span>
+                                                <textarea name='classify_des' placeholder="输入分类描述"></textarea>
+                                            </div>
+                                            <button>添加</button>
+                                        </form>
+                                    </div>
+                                    <%}%>
+            </section>
+
+        </section>
+    </section>
+</body>
+
+</html>

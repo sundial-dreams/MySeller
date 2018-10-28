@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/resource/fa/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="/seller/css/comm.css" rel="stylesheet">
+    <link href="/seller/css/setting.css" rel="stylesheet">
+
+    <script src='/resource/js/jquery.min.js'></script>
+    <script src='/resource/js/daydream.js'></script>
+    <script src='/seller/js/setting.js'></script>
+</head>
+
+<body>
+    <section id="setting">
+        <div class="top">
+            <div class="head">
+                <a href="/seller/index">
+                    <i class="fa fa-angle-left"></i>&nbsp;&nbsp;返回首页</a>
+                <a href="/seller/exit">退出登陆</a>
+            </div>
+            <div class="foot">
+                <img src="/image/seller/1/head/1.jpg" />
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="one">
+                <h1>店铺</h1>
+                <div>
+                    <span>店铺</span>
+                    <input type="text" placeholder="店铺名" disabled value="<%=seller_data.shop_name%>"/>
+                    <button>修改</button>
+                </div>
+                <div>
+                    <span>地址</span>
+                    <input type="text" placeholder="地址"  disabled value="<%=seller_data.address%>"/>
+                    <button>修改</button>
+                </div>
+                <div class="textarea">
+                    <span>详情</span>
+                    <textarea disabled><%=seller_data.description%></textarea>
+                    <button>修改</button>
+                </div>
+                <div>
+                    <span>主管</span>
+                    <input type="text" placeholder="负责人" disabled  value="<%=seller_data.charge%>"/>
+                    <button>修改</button>
+                </div>
+            </div>
+            <div class="two">
+                <h1>账号</h1>
+                <div>
+                    <span>账号</span>
+                    <input type="text" placeholder="账号" disabled value="<%=seller_data.account%>"/>
+                    <button>修改</button>
+                </div>
+                <div>
+                    <span>密码</span>
+                    <input type="text" placeholder="密码" disabled value="<%=seller_data.password%>"/>
+                    <button>修改</button>
+                </div>
+                <div>
+                    <span>电话</span>
+                    <input type="text" placeholder="电话号" disabled value="<%=seller_data.phone%>"/>
+                    <button>修改</button>
+                </div>
+            </div>
+            <div class="three">
+                <h1>设置</h1>
+                <div>
+                    <a href="#">
+                        <span>主题设置</span>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+
+                </div>
+                <div>
+                    <a href="#">
+                        <span>字体设置</span>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <span>其他设置</span>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>

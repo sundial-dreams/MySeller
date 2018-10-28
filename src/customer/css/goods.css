@@ -1,0 +1,287 @@
+
+body{
+    overflow: hidden;
+}
+span#data{
+    display: none;
+}
+section#goods{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+section.head{
+    width: 100%;
+    height: 50%;
+    position: relative;
+}
+
+section.head  img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+section.head a{
+    display: inline-block;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: rgba(0,0,0,.2);
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+section.context{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding:5px;
+    box-shadow: 0 -2px 5px rgba(0,0,0,.2);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: relative;
+}
+section.context .select{
+    width: 100%;
+    height: 32px;
+    background: white;
+}
+section.context .select button{
+    width: 33.3%;
+    height: 30px;
+    color: gray;
+    font-size: 15px;
+    text-align: center;
+    float: left;
+}
+section.context .select button.main{
+    color: gold;
+    position: relative;
+}
+
+section.context .select button.main:after{
+    content: '';
+    width: 50%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    background: gold;
+
+}
+section.context .view{
+     width: 100%;
+     height: auto;
+     box-sizing: 10px;
+     background: white;
+     position: absolute;
+     left: 0;
+     top:50px;
+     transition: all .3s;
+     transform: translateX(0);
+
+}
+
+section.context .view .head h2,
+section.context .view .head h3,
+section.context .view .head h4{
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 20px;
+    color: gray;
+}
+
+section.context .view .head h2 {
+   color: red;  
+   margin-left:5px;
+    
+}
+section.context .view .middle{
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    color: gray;
+}
+section.context .view .middle h2,
+section.context .view .middle h3{
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+
+section.context .comment-view{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 20px;
+    transition: all .3s;
+    transform: translateX(0);
+    position: absolute;
+    top: 50px;
+    left: 110%;
+  
+}
+
+
+section.context .comment-view>h3{
+   width: 100%;
+   color: gray;
+   margin-bottom: 20px;
+}
+
+
+ul.comment-ul{
+   width: 100%;
+   height: auto;
+    
+}
+ul.comment-ul li{
+    width:100%;
+    min-height: 50px;
+    display: block;
+    height: auto;
+    margin-bottom: 20px;
+}
+ul.comment-ul li.message h3{
+    width: 100%;
+    color: rgba(0,0,0,.15);
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 10px;
+}
+ul.comment-ul li.preload{
+    width: 100%;
+    height: 100px;
+    color: gray;
+    text-align: center;
+    display: block;
+    line-height: 100px;
+}
+ul.comment-ul li.preload p{
+    display: inline-block;
+    font-size: 16px;
+}
+ul.comment-ul li.preload span{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: gray;
+    border-radius: 50%;
+    margin-left: 10px;
+    opacity: 1;
+    animation: .5s loading alternate infinite;
+    
+}
+ul.comment-ul li.preload span:nth-child(2){
+   animation-delay: .5s;
+}
+ul.comment-ul li.preload span:nth-child(3){
+   animation-delay: 1s;
+} 
+ul.comment-ul li .top{
+    width: 100%;
+    height: 30px;
+    
+}
+ul.comment-ul li .top h3,
+ul.comment-ul li .top h5{
+    color: gray;
+    float: left;
+
+}
+ul.comment-ul li .top h5{
+    float: right;
+}
+ul.comment-ul li .top h5.level{
+    color:blueviolet;
+    margin-right: 10px;
+}
+ul.comment-ul li .bottom{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    color: gray;
+} 
+section.context .info-view{
+   width: 100%;
+   height: auto;
+   box-sizing: border-box;
+   padding: 10px;
+   transition: all .3s;
+   transform: translateX(0);
+   position: absolute;
+   top: 50px;
+   left: 110%;
+}
+section.context .info-view h3{
+    color: gray;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+section.context .info-view p{
+    font-size: 14px;
+    color: blueviolet;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+section.footer{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: all .3s;
+    transform: translateY(0);
+}
+
+section.footer .left{
+    width: 40%;
+    height: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding: 10px;
+
+}
+section.footer .left>button{
+    width: 33.3%;
+    height: 100%;
+    float: left;
+    font-size: 20px;
+    color: blueviolet;
+}
+section.footer .right{
+    width: 60%;
+    height: 100%;
+    float: left;
+    box-sizing: border-box;
+
+}
+section.footer .right > button{
+    width: 50%;
+    height: 100%;
+    float: left;
+    font-size: 15px;
+    color: white;
+    background: orangered;
+    box-sizing: border-box;
+    border: none;
+
+}
+section.footer .right > button:nth-child(1){
+
+   background: blueviolet;
+}
+

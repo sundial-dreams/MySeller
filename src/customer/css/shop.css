@@ -1,0 +1,484 @@
+body{
+    background: white;
+}
+span#data{
+    display: none;
+}
+section#shop{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+section.head{
+    width: 100%;
+    height: 120px;
+    box-sizing: border-box;
+    padding: 10px;
+    background: blueviolet;
+    position: fixed;
+   
+}
+section.head .top{
+    width: 100%;
+    height: 30%;
+    position: relative;
+}
+section.head .top>a{
+    display: inline-block;
+    color: white;
+    font-size: 18px;
+}
+section.head .top .right{
+    width: 50%;
+    height: 100%;
+    text-align: right;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+section.head .top .right a{
+    color: white;
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 18px;
+}
+section.head .bottom{
+    width: 100%;
+    height: 70%;
+
+}
+section.head .bottom .left{
+    width: 25%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+section.head .bottom .left img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border:none;
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+section.head .bottom .right{
+    float: left;
+    width: 75%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+}
+section.head .bottom .right h2,
+section.head .bottom .right h4{
+    color: white;
+    margin-top: 5px;
+}
+
+
+section.context{
+    width: 100%;
+    min-height: 100px;
+    background: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-top: 110px;
+    position: relative;
+}
+section.context h2{
+    width: 100%;
+    height: 50px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    line-height: 50px;
+    text-indent: 5px;
+}
+section.context .select{
+    width: 100%;
+    height: 30px;
+    
+}
+
+section.context .select button{
+    width: 33.3%;
+    height: 100%;
+    display: block;
+    float: left;
+    color: gray;
+    font-size: 15px;
+    text-align: center;
+    line-height: 30px;
+    
+}
+section.context .select button.main{
+ 
+    color: blueviolet;
+    position: relative;     
+}
+section.context .select button.main:after{
+    content: '';
+    width: 50%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    background: blueviolet;
+
+}
+section.context .view{
+    width: 100%;
+    height: auto;
+    margin:10px;
+    transition: all .3s;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    transform: translateX(0);
+}
+section.context .view.hidden{
+    transform:translateX(-110%)
+}
+section.context .view>.left,
+section.context .view> .right
+{
+    width: 30%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 5px;
+    display: block;
+    float: left;
+}
+
+section.context .view> .right {
+    width: 70%;
+}
+ul.classify-ul{
+    width: 100%;
+    height: auto;
+}
+ul.classify-ul li{
+    width: 100%;
+    height: 40px;
+    display: block;
+    box-sizing: border-box;
+}
+ul.classify-ul li button.main{
+    color:  goldenrod;
+    position: relative;
+}
+ul.classify-ul li button{
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    text-align: left;
+}
+ul.goods-ul{
+    width: 100%;
+    height: auto;
+}
+ul.goods-ul li{
+    width: 100%;
+    height: 80px;
+
+}
+ul.goods-ul li.message{
+    line-height: 80px;
+}
+ul.goods-ul li.message h3{
+    display: inline-block;
+  color: rgba(0,0,0,.15);
+  width: 100%;
+  text-align: left;
+  box-sizing: border-box;
+  padding-left: 40px; 
+
+}
+ul.goods-ul li.preload{
+    width: 100%;
+    height: 100px;
+    color: blueviolet;
+    text-align: center;
+    display: block;
+    line-height: 100px;
+}
+ul.goods-ul li.preload p{
+    display: inline-block;
+    font-size: 16px;
+}
+ul.goods-ul li.preload span{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: blueviolet;
+    border-radius: 50%;
+    margin-left: 10px;
+    opacity: 1;
+    animation: .5s loading alternate infinite;
+    
+}
+ul.goods-ul li.preload span:nth-child(2){
+   animation-delay: .5s;
+}
+ul.goods-ul li.preload span:nth-child(3){
+   animation-delay: 1s;
+} 
+ul.goods-ul li a{
+    width: 100%;
+    height: 100%;
+}
+ul.goods-ul li a .left{
+    width: 30%;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+ul.goods-ul li a .left img{
+    width: 60px;
+    height: 60px;
+    border-radius: 2px;
+    border: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+ul.goods-ul li a .right{
+   float: left;
+   width: 70%;
+   height: 100%;
+   box-sizing: border-box;
+   padding: 5px;
+
+}
+ul.goods-ul li a .right .top{
+    width: 100%;
+    height: 40%;
+
+}
+ul.goods-ul li a .right .top h3,
+ul.goods-ul li a .right .top p
+{
+   color: blueviolet;
+   margin-top: 3px;
+}
+ul.goods-ul li a .right .bottom{
+    width: 100%;
+    height: 60%;
+
+}
+ul.goods-ul li a .right .bottom>p{
+    width: 30%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    line-height: 50px;
+}
+ul.goods-ul li a .right .bottom .btn-group{
+    width: 50%;
+    height: 100%;
+    float: right;
+    box-sizing: border-box;
+    padding: 15px;
+
+}
+ul.goods-ul li a .right .bottom .btn-group button{
+    
+  width: 20px;
+  height: 20px;
+  color: white;
+  background: blueviolet;
+  border: none;
+  border-radius: 50%;
+  float: left;
+}
+ul.goods-ul li a .right .bottom .btn-group p{
+    width: 20px;
+    height: 20px;
+    float: left;
+    color: blueviolet;
+    text-align: center;
+    line-height: 20px;
+}
+
+section.context .comment-view.hidden{
+    transform:translateX(-110%)
+}
+section.context .comment-view{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 20px;
+    transition: all .3s;
+    transform: translateX(0);
+    position: absolute;
+    top: 100px;
+    left: 110%;
+}
+section.context .comment-view h2{
+    color: rgba(0,0,0,.3);
+}
+ul.comment-ul{
+   width: 100%;
+    height: auto;
+}
+ul.comment-ul li{
+    width:100%;
+    min-height: 50px;
+    display: block;
+    height: auto;
+    margin-bottom: 20px;
+}
+ul.comment-ul li.message h3{
+    width: 100%;
+    color: rgba(0,0,0,.15);
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 10px;
+}
+ul.comment-ul li.preload{
+    width: 100%;
+    height: 100px;
+    color: gray;
+    text-align: center;
+    display: block;
+    line-height: 100px;
+}
+ul.comment-ul li.preload p{
+    display: inline-block;
+    font-size: 16px;
+}
+ul.comment-ul li.preload span{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: gray;
+    border-radius: 50%;
+    margin-left: 10px;
+    opacity: 1;
+    animation: .5s loading alternate infinite;
+    
+}
+ul.comment-ul li.preload span:nth-child(2){
+   animation-delay: .5s;
+}
+ul.comment-ul li.preload span:nth-child(3){
+   animation-delay: 1s;
+} 
+ul.comment-ul li .top{
+    width: 100%;
+    height: 30px;
+    
+}
+ul.comment-ul li .top h3,
+ul.comment-ul li .top h5{
+    color: gray;
+    float: left;
+
+}
+ul.comment-ul li .top h5{
+    float: right;
+}
+ul.comment-ul li .top h5.level{
+    color:blueviolet;
+    margin-right: 10px;
+}
+ul.comment-ul li .bottom{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    color: gray;
+}
+
+section.context .info-view{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 20px;
+    transition: all .3s;
+    transform: translateX(0);
+    position: absolute;
+    top: 100px;
+    left: 110%;
+}
+section.context .info-view.hidden{
+    transform:translateX(-110%)
+}
+section.context .info-view img{
+    display: block;
+    border: none;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    
+}
+section.context .info-view h3{
+    width: 100%;
+    color: gray;
+    display: block;
+    
+}
+section.context .info-view p{
+    box-sizing: border-box;
+    display: block;
+    padding-left: 15px;
+    font-size: 14px;
+    color: blueviolet;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+section.footer{
+    width: 100%;
+    height: 50px;
+    background: white;
+    box-shadow: 0 0 20px -5px rgba(0,0,0,.3);
+    position: fixed;
+    bottom: 0;
+    transition: all .3s;
+    transform: translateY(0);
+}
+section.footer .left{
+    width: 70%;
+    height: 100%;
+    float: left;
+}
+section.footer .left i{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    color: white;
+    background: gray;
+    border-radius: 50%;
+    font-size: 25px;
+    margin-top: -10px;
+    text-align: center;
+    line-height: 50px;
+}
+section.footer .left h4,
+section.footer .left h3
+{
+   color: red;
+   margin-top: 5px;
+   margin-right: 5px;
+   display: inline-block;
+}
+section.footer .left h4{
+    color: blueviolet;
+}
+section.footer .right{
+
+    width: 30%;
+    height: 100%;
+    float: left;
+}
+section.footer .right button{
+    width: 100%;
+    height: 100%;
+    background: blueviolet;
+    color: white;
+}

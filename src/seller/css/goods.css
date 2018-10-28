@@ -1,0 +1,381 @@
+section#goods {
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+
+section.context .right {
+    padding-top: 0;
+}
+
+section.right>.top {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    margin-top: 0;
+    position: fixed;
+    padding-top: 10px;
+    background: white;
+}
+
+section.right>.top .left {
+    width: 250px;
+    height: 32px;
+    display: inline-block;
+}
+
+section.right>.top .left form {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+section.right>.top .left form input {
+    width: 80%;
+    height: 100%;
+    border: none;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    padding-left: 10px;
+    background: transparent;
+    float: left;
+}
+
+section.right>.top .left form button {
+    color: gray;
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+
+section.right>.top .right {
+    width: 30%;
+    height: 32px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+ul.classify-ul {
+    width: 100%;
+    height: 100%;
+}
+
+ul.classify-ul li {
+    width: 33.3%;
+    float: left;
+    height: 100%;
+    text-align: center;
+    line-height: 32px;
+}
+
+ul.classify-ul li a {
+    display: inline-block;
+    width: 95%;
+    color: gray;
+}
+
+ul.classify-ul li a.main {
+    color: blueviolet;
+}
+
+div.goods-list {
+    width: 100%;
+    height: auto;
+}
+
+ul.item-ul {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+}
+
+ul.item-ul li {
+    width: 33.3%;
+    height: 150px;
+    float: left;
+    margin-bottom: 50px;
+}
+
+ul.item-ul li>.top {
+    width: 90%;
+    height: 75%;
+    margin: 0 auto;
+    position: relative;
+}
+
+ul.item-ul li>.top .left {
+    width: 60%;
+    height: 100%;
+    float: left;
+}
+
+ul.item-ul li>.top .left h1 {
+    font-size: 18px;
+    color: rgba(0, 0, 0, .5);
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+ul.item-ul li>.top>.left h2 {
+    color: red;
+    font-size: 15px;
+}
+
+ul.item-ul li>.top>.left h2.total {
+    color: gray;
+    position: absolute;
+    bottom: 0;
+}
+
+ul.item-ul li>.top .right {
+    width: 40%;
+    height: 100%;
+    float: right;
+}
+
+ul.item-ul li>.top .right img {
+    width: 100px;
+    height: 100px;
+    border: none;
+}
+
+ul.item-ul li>.bottom {
+    width: 90%;
+    height: 25%;
+    margin: 0 auto;
+}
+
+ul.item-ul li>.bottom button {
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-left: 0;
+    padding-right: 40px;
+    font-size: 15px;
+    color: rgba(0, 0, 0, .3);
+}
+
+ul.item-ul li .hiddenData {
+    display: none;
+}
+
+ul.item-ul li.item-message {
+    width: 100%;
+    height: 50px;
+}
+
+ul.item-ul li.item-message h1 {
+    color: gray;
+    text-align: left;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 16px;
+    text-indent: 100px;
+}
+
+ul.goods-ul li.message {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+
+ul.goods-ul li.message h1 {
+    width: 100%;
+    height: 100%;
+    line-height: 100px;
+    color: rgba(0, 0, 0, .16);
+    text-align: center;
+    font-size: 25px;
+}
+
+ul.goods-ul {
+    width: 100%;
+    min-height: 200px;
+    margin-top: 100px;
+}
+
+ul.goods-ul>li>h1 {
+    color: rgba(0, 0, 0, .6);
+    width: 100%;
+    font-size: 20px;
+}
+
+ul.goods-ul>li {
+    width: 100%;
+    min-height: 240px;
+    margin-bottom: 20px;
+}
+
+div.addClassify {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+div.addClassify h1 {
+    margin-top: 100px;
+    font-size: 20px;
+    color: blueviolet;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+div.addClassify h2 {
+    color: red;
+    width: 100%;
+    height: 32px;
+    text-align: center;
+    font-size: 15px;
+}
+
+div.addClassify form {
+    width: 60%;
+    height: 60%;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+}
+
+div.addClassify form div {
+    width: 90%;
+    height: 50px;
+    margin: 0 auto;
+}
+
+div.addClassify form div input {
+    width: 90%;
+    height: 36px;
+    background: transparent;
+    border: none;
+    box-sizing: border-box;
+    padding-left: 15px;
+}
+
+div.addClassify form div.textarea {
+    height: 200px;
+}
+
+div.addClassify form div.textarea span {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+div.addClassify form div textarea {
+    width: 90%;
+    height: 200px;
+    background: transparent;
+    border: none;
+    display: block;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-top: 10px;
+    resize: none;
+}
+
+div.addClassify form button {
+    border: none;
+    background: blueviolet;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .4);
+    width: 80px;
+    height: 24px;
+    position: absolute;
+    margin-top: 20px;
+    right: 20px;
+    bottom: 10px;
+    color: white;
+}
+
+div.addGoods {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+div.addGoods .top {
+    width: 100%;
+    margin-top: 100px;
+    color: orangered;
+    font-size: 18px;
+}
+
+div.addGoods .bottom {
+    width: 100%;
+    height: 70%;
+}
+
+div.addGoods .bottom form {
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+div.addGoods .bottom form div {
+    width: 100%;
+    height: 36px;
+    margin-bottom: 20px;
+}
+
+div.addGoods .bottom form div.textarea {
+    width: 100%;
+    height: 100px;
+}
+
+div.addGoods .bottom form div.textarea textarea {
+    width: 90%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-top: 10px;
+    resize: none;
+    display: block;
+}
+
+div.addGoods .bottom form div input {
+    width: 90%;
+    height: 36px;
+    background: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+div.addGoods .bottom form div input[type=file] {
+    text-align: center;
+    line-height: 20px;
+    height: 20px;
+    text-anchor: middle;
+    color: rgba(0,0,0,.4);
+    box-sizing: border-box;
+    width: 30%;
+}
+div.addGoods .bottom form button{
+    box-sizing: border-box;
+    width: 100px;
+    height: 24px;
+    background: blueviolet;
+    color: white;
+    border-radius: 5px;
+     box-shadow: 0 0 20px -5px rgba(0,0,0,.5);
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+}
+div.addGoods h2.error{
+    color: red;
+    font-size: 15px;
+    width: 100%;
+    height: 32px;
+    text-align: center;
+}

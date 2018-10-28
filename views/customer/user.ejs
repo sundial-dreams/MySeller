@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/resource/fa/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="/customer/css/comm.css" rel="stylesheet">
+    <link href="/customer/css/user.css" rel="stylesheet">
+
+    <script src='/resource/js/jquery.min.js'></script>
+    <script src='/resource/js/daydream.js'></script>
+    <script src='/customer/js/user.js'></script>
+</head>
+
+<body>
+    <section id="user">
+        <section class="head">
+            <div class="user">
+                <img src='/image/customer/<%=userData.account%>/head/<%=userData.headimage%>' />
+                <h3><%= userData.nickname%></h3>
+            </div>
+            <a href="/customer/<%=userData.account%>/setting">
+                <i class="fa fa-cog"></i>
+            </a>
+        </section>
+        <section class="order">
+            <h2>我的订单</h2>
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-paypal"></i>
+                        <p>待付款</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-paypal"></i>
+                        <p>待收货</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-paypal"></i>
+                        <p>待付款</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-paypal"></i>
+                        <p>订单记录</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-paypal"></i>
+                        <p>退款</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="member">
+            <h2>我的会员</h2>
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-meetup"></i>
+                        <p>会员中心</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-meetup"></i>
+                        <p>会员主题</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-meetup"></i>
+                        <p>会员积分</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-meetup"></i>
+                        <p>积分兑换</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-meetup"></i>
+                        <p>优惠</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-meetup"></i>
+                        <p>充值</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-meetup"></i>
+                        <p>推荐</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-meetup"></i>
+                        <p>更多</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="tool">
+            <h2>更多工具</h2>
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-address-book"></i>
+                        <p>one</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-address-book"></i>
+                        <p>one</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-address-book"></i>
+                        <p>one</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-address-book"></i>
+                        <p>one</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section id='foot'>
+            <ul>
+                <li>
+                    <a href='/customer/index'>
+                        <p>
+                            <i class='fa fa-home'></i>
+                            首页
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href='/customer/order'>
+                        <p>
+                            <i class='fa fa-shopping-cart'></i>
+                            购物车
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href='/customer/user' class='main'>
+                        <p>
+                            <i class='fa fa-user'></i>
+                            个人中心
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+    </section>
+</body>
+
+</html>

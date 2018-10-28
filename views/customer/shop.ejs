@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/resource/fa/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="/customer/css/comm.css" rel="stylesheet">
+    <link href="/customer/css/shop.css" rel="stylesheet">
+
+    <script src='/resource/js/jquery.min.js'></script>
+    <script src='/resource/js/daydream.js'></script>
+    <script src='/customer/js/shop.js'></script>
+</head>
+<span id='data'>
+    <%=shopData.shop_id%>
+</span>
+
+<body>
+    <section id="shop">
+        <section class="head">
+            <div class="top">
+                <a href="/customer/index">
+                    <i class="fa fa-arrow-left"></i>
+                </a>
+                <div class="right">
+                    <a href="#">
+                        <i class="fa fa-share"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-star-half-empty"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="left">
+                    <img src='/image/seller/<%=shopData.shop_id%>/head/<%=shopData.shop_image%>' />
+                </div>
+                <div class="right">
+                    <h2>
+                        <%=shopData.shop_name%>
+                    </h2>
+                    <h4>
+                        <%=shopData.shop_address%>
+                    </h4>
+                </div>
+            </div>
+        </section>
+        <section class="context">
+            <h2>
+                <%=shopData.shop_des%>
+            </h2>
+            <div class='select'>
+                <button class="main">商品</button>
+                <button>评价</button>
+                <button>商家</button>
+            </div>
+
+            <div class="view">
+                <div class="left">
+                    <ul class="classify-ul">
+                        <li>
+                            <button class="main">
+                                <%=classifyList[0]%>
+                            </button>
+                        </li>
+                        <% for(let i = 1,v;v = classifyList[i++];){%>
+                            <li>
+                                <button>
+                                    <%=v%>
+                                </button>
+                            </li>
+                            <%}%>
+                    </ul>
+                </div>
+                <div class="right">
+                    <ul class="goods-ul">
+                        <%for(let v of classifyData){%>
+                            <li>
+                                <a href="/customer/shop/<%=shopData.shop_id%>/goods/<%=v.goods_id%>">
+                                    <div class="left">
+                                        <img src='/image/seller/<%=shopData.shop_id%>/goods/<%=v.goods_image%>' />
+                                    </div>
+                                    <div class="right">
+                                        <div class="top">
+                                            <h3>
+                                                <%= v.goods_name%>
+                                            </h3>
+                                            <p>销售2件&nbsp;&nbsp;&nbsp;评论3</p>
+                                        </div>
+                                        <div class="bottom">
+                                            <p>
+                                                <%=v.goods_price%>
+                                            </p>
+                                            <div class="btn-group">
+                                                <button>-</button>
+                                                <p>2</p>
+                                                <button>+</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </a>
+                            </li>
+                        <%}%>
+                        <%if(classifyData.length === 0){%>
+                        
+                            <li class="message">
+                                <h3>暂无商品</h3>
+                            </li>
+                        
+                        <%}%>
+                    </ul>
+                </div>
+            </div>
+            <div class="comment-view">
+                <h2>用户评论</h2>
+                <ul class="comment-ul">
+               
+                </ul>
+            </div>
+            <div class="info-view">
+                <img src='/image/seller/<%=shopData.shop_id%>/head/<%=shopData.shop_image%>'/>
+                <h3>店名</h3>
+                <p><%=shopData.shop_name%></p>
+                <h3>所在地址</h3>
+                <p><%=shopData.shop_address%></p>
+                <h3>主管</h3>
+                <p><%=shopData.shop_charge%></p>
+                <h3>联系电话</h3>
+                <p><%=shopData.shop_phone%></p>
+                <h3>详情</h3>
+                <p><%=shopData.shop_des%></p>
+            </div>
+
+        </section>
+
+        <section class="footer">
+            <div class="left">
+                <i class="fa fa-shopping-cart"></i>
+                <h3>12</h3>
+                <h4>共3件商品</h4>
+
+            </div>
+            <div class="right">
+                <button>结算</button>
+            </div>
+        </section>
+
+    </section>
+</body>
+
+</html>

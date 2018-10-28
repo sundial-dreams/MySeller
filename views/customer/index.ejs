@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="/resource/fa/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link href="/customer/css/comm.css" rel="stylesheet">
+        <link href="/customer/css/index.css" rel="stylesheet">
+        
+        <script src='/resource/js/jquery.min.js'></script>
+        <script src='/resource/js/daydream.js'></script>
+        <script src='/customer/js/index.js'></script>
+    </head>
+    <body>
+        <section id='head'>
+         <div class="input">
+             <form>
+                 <input type="text" placeholder="输入商品或商家..." />
+                 <button><i class="fa fa-search"></i></button> 
+             </form>
+         </div>
+        </section>  
+        <section id="image">
+           <div class="container">
+                <div class="image">
+                <div class="bottom">
+                    <span class="main"></span>
+                    <span></span>
+                    <span></span>
+                </div>
+           </div>
+        </section>
+        <section id="subarea">
+           <div class="discount-goods">
+                <h3 class="title">折扣</h3>
+                <div class="context">
+                   <img src="/customer/image/2.jpg"/>
+                </div>
+           </div>
+           <div class="good-goods">
+                <h3 class="title">有好货</h3>
+                <div class="context">
+                        <img src="/customer/image/1.jpg"/>
+                </div>
+           </div>
+           <div class="recommend-seller">
+                <h3 class="title">推荐商家</h3>
+                <div class="context">
+                        <img src="/customer/image/4.jpg"/>
+                </div>
+           </div>
+           <div class="require-inventory">
+                <h3 class="title">必买清单</h3>
+                <div class="context">
+                        <img src="/customer/image/3.jpg"/>
+                </div>
+           </div>
+        </section>
+        <section id="seller">
+           <h4>附近商家</h4>
+           <ul>
+              <% for (let v of datas.result){%>
+               <li>
+                   <a href="/customer/shop/<%= v.id%>">
+                       <div class="left">
+                           <img src='/image/seller/<%=v.id%>/head/<%=v.shop_image%>'/>
+                       </div>
+                       <div class="right">
+                           <h2><%= v.shop_name%></h2>
+                           <p><%= v.description%></p>
+                           <p><%= v.address%></p>
+                       </div>
+                   </a>
+               </li>
+             <%}%>
+           </ul>
+        </section>
+        <section id='foot'>
+                    <ul>
+                    <li>
+                       <a href='/customer/index' class='main'>
+                         <p><i class='fa fa-home'></i>
+                            首页
+                        </p>
+                       </a>
+                    </li>
+                    <li>
+                      <a href='/customer/order'>
+                        <p><i class='fa fa-shopping-cart'></i>
+                            购物车
+                       </p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href='/customer/user'>
+                        <p><i class='fa fa-user'></i>
+                           个人中心
+                       </p>
+                      </a>
+                    </li>
+                    </ul>
+    </section>        
+    </body>
+</html>

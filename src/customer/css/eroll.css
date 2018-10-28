@@ -1,0 +1,72 @@
+section#eroll{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 20px;
+}
+section#eroll h3{
+    width: 100%;
+    text-align: center;
+    color: gray;
+    margin-bottom: 20px;
+}
+section#eroll .message-box{
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: red;
+}
+section#eroll form{
+    width: 100%;
+    box-sizing: border-box;
+    height: 300px;
+    padding: 10px;
+    text-align: center;
+}
+section#eroll form input:first-child{
+    margin-top: 0;
+}
+section#eroll form input{
+    width: 85%;
+    display: inline-block;
+    height: 32px;
+    border: none;
+    border-bottom: 1px solid blueviolet;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+section#eroll form button{
+   width: 85%;
+   height: 32px;
+   background: blueviolet;
+   border-radius: 20px;
+   border: none;
+   margin-top: 20px;
+   box-shadow: 0 0 20px rgba(0,0,0,.3);
+   color: white;
+}
+section#eroll form h5{
+    margin-top: 10px;
+    color: gray;
+    box-sizing: border-box;
+    padding: 10px;
+}
+section#eroll .bottom{
+    width: 100%;
+    height: 32px;
+    box-sizing: border-box;
+    padding: 20px;
+ }
+section#eroll a{
+    display: block;
+    width: 40%;
+    height: 100%;
+    float: left;
+    border: none;
+    background: transparent;
+    text-align: left;
+    color: grey;
+}
+
+

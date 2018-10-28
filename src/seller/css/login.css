@@ -1,0 +1,231 @@
+section#login{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.11);
+    position: relative;
+}
+
+section#login  .login-block{
+    width: 400px;
+    height: 350px;
+    background: white;
+    box-shadow: 0 0 20px rgba(0,0,0,.11);
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    
+    transition: all .5s;
+    opacity: 0;
+    transform:translate(-50%,-50%) translateY(100px);
+    z-index: -1;
+}
+section#login  .login-block.show{
+    opacity: 1;
+    z-index: 1;
+    transform:translate(-50%,-50%) translateY(0);
+}
+
+section#login  .login-block .top{
+    width: 100%;
+    height: 15%;
+    background: blueviolet;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+    box-sizing: border-box;
+    padding: 10px;
+    position: relative;
+
+
+}
+section#login  .login-block .top h3{
+    width: 100%;
+    margin-left: 10px;
+    line-height: 50px;
+}
+section#login  .login-block .top button{
+    font-size: 12px;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+section#login  .login-block form{
+    width: 100%;
+    height: 65%;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 20px;
+}
+section#login  .login-block form>div{
+    width: 90%;
+    height: 32px;
+    background: white;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 30px;
+}
+section#login  .login-block form>div span{
+    width: 10%;
+    height: 100%;
+    display: block;
+    color:white;
+    background: rebeccapurple;
+    font-size: 20px;
+    text-align: center;
+    line-height: 32px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    float: left;
+}
+section#login  .login-block form>div input{
+    width: 90%;
+    height: 100%;
+    background: white;
+    box-sizing: border-box;
+    padding-left: 10px;
+    color: gray;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+    float: left;
+}
+section#login  .login-block form h4{
+    color: red;
+    text-align: center;
+    width: 100%;
+}
+section#login  .login-block .bottom{
+   width: 100%;
+   height: 15%;
+}
+section#login  .login-block .bottom > button{
+    width: 80px;
+    height: 24px;
+    margin-right: 20px;
+    float: right;
+    background: blueviolet;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
+    color: white;
+}
+section#login  .login-block .bottom > a{
+    float: left;
+    margin-left: 20px;
+}
+
+
+
+section#login  .eroll-block{
+    width: 400px;
+    height: 500px;
+    background: white;
+    box-shadow: 0 0 20px rgba(0,0,0,.11);
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transition: all .5s;
+    transform: translate(-50%,-50%) translateY(100px);
+    opacity: 0;
+    z-index: -1;
+}
+section#login  .eroll-block.show{
+    opacity: 1;
+    transform: translate(-50%,-50%) translateY(0);
+    z-index: 1;
+}
+section#login  .eroll-block .top{
+    width: 100%;
+    height: 15%;
+    background: blueviolet;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+    box-sizing: border-box;
+    padding: 10px;
+    position: relative;
+}
+
+section#login  .eroll-block .top button{
+    font-size: 12px;
+    height: 30px;
+    color: white;
+    border: none;
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    line-height: 30px;
+}
+section#login  .eroll-block .top button i{
+  font-size: 20px;
+}
+section#login  .eroll-block form{
+    width: 100%;
+    height: 65%;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 20px;
+}
+section#login  .eroll-block form>div{
+    width: 90%;
+    height: 32px;
+    background: white;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+}
+section#login  .eroll-block form>div span{
+    width: 10%;
+    height: 100%;
+    display: block;
+    color:rebeccapurple;
+    background: transparent;
+    font-size: 20px;
+    text-align: center;
+    line-height: 32px;
+
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    float: left;
+}
+section#login  .eroll-block form>div input{
+    width: 90%;
+    height: 100%;
+    background: white;
+    box-sizing: border-box;
+    padding-left: 10px;
+    color: gray;
+  
+    border: none;
+    border-bottom: 1px solid rebeccapurple;
+    float: left;
+}
+section#login  .eroll-block form h4{
+    color: red;
+    text-align: center;
+    width: 100%;
+}
+section#login  .eroll-block .bottom{
+   width: 100%;
+   height: 15%;
+}
+section#login  .eroll-block .bottom > button{
+    width: 80px;
+    height: 24px;
+    margin-right: 20px;
+    float: right;
+    background: blueviolet;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
+    color: white;
+}
+section#login  .eroll-block .bottom > a{
+    float: left;
+    margin-left: 20px;
+}

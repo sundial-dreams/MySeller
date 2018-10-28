@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="/resource/fa/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link href="/customer/css/comm.css" rel="stylesheet">
+        <link href="/customer/css/order.css" rel="stylesheet">
+        
+        <script src='/resource/js/jquery.min.js'></script>
+        <script src='/resource/js/daydream.js'></script>
+        <script src='/customer/js/order.js'></script>
+    </head>
+    <body>
+      <section id="order">
+          <section class="head">
+              <div class="left">
+                  <h1>我的购物车</h1>
+                  <h3>共<em><%=len%></em>件商品</h3>
+              </div>
+              <div class="right">
+                    <button><i class="fa fa-edit"></i></button>
+              </div>
+          </section>
+          <section class="context">
+              <ul class="seller-ul">
+                  <%  for(let [k,v] of data){%>
+                  <li>
+                      <a href="/customer/shop/<%= k%>"><h2><i class="fa fa-home"></i>&nbsp;<%=v[0].shop_name%></h2></a>
+                      <ul class="goods-ul">
+                        <%for(let x of v){%>
+                        <li>
+                            <a href="/customer/shop/<%= k%>/goods/<%=x.goods_id%>">
+                                <div class="left">
+                                    <img src='/image/seller/<%=k%>/goods/<%=x.goods_img%>'/>
+                                </div>
+                                <div class="right">
+                                    <h3><%=x.goods_name%></h3>
+                                    <h4><%=x.goods_price%></h4>
+                                    <div class="bottom">
+                                        <div class="select-num">
+                                            <button class="sub">-</button>
+                                            <p><%=x.number%></p>
+                                            <button class="add">+</button>
+                                        </div>
+                                        <button class="balance">结算</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <%}%>
+                      </ul>
+                  </li>
+                  <%}%>
+                  <%if(data.size === 0){%>
+                  <li class="message">
+                      <h3>亲,购物车空空如也.</h3>
+                  </li>  
+                  <%}%>
+              </ul>
+          </section>
+          <section id='foot'>
+            <ul>
+            <li>
+               <a href='/customer/index'>
+                 <p><i class='fa fa-home'></i>
+                    首页
+                </p>
+               </a>
+            </li>
+            <li>
+              <a href='/customer/order' class='main'>
+                <p><i class='fa fa-shopping-cart'></i>
+                    购物车
+               </p>
+              </a>
+            </li>
+            <li>
+              <a href='/customer/user'>
+                <p><i class='fa fa-user'></i>
+                   个人中心
+               </p>
+              </a>
+            </li>
+            </ul>
+</section>     
+      </section>     
+    </body>
+</html>

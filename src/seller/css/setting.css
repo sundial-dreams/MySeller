@@ -1,0 +1,110 @@
+section#setting {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+section#setting .top {
+    width: 100%;
+    height: 30%;
+}
+
+section#setting .top .head {
+    width: 100%;
+    height: 32px;
+}
+
+section#setting .top .head a {
+    color: gray;
+    font-size: 18px;
+}
+section#setting .top .head a:nth-child(2){
+    float: right;
+    margin-right: 20px;
+}
+section#setting .top .foot {
+    width: 100%;
+    height: 80%;
+    position: relative;
+}
+
+section#setting .top .foot img {
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+    border: 2px solid blueviolet;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+section#setting .bottom {
+    widows: 100%;
+    height: 70%;
+    box-sizing: border-box;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+}
+
+section#setting .bottom div {
+    width: 90%;
+    display: block;
+    height: auto;
+}
+
+section#setting .bottom div h1 {
+    color: rgba(0, 0, 0, .6);
+    font-size: 20px;
+}
+
+section#setting .bottom div div {
+    width: 100%;
+    display: block;
+    height: auto;
+   
+    margin-top: 5px;
+    box-sizing: border-box;
+    padding-left: 50px;
+    font-size: 16px;
+}
+section#setting .bottom div div input{
+    width: 90%;
+    height: 36px;
+    background: transparent;
+    box-sizing: border-box;
+    padding-left:20px; 
+    border: none;
+}
+section#setting .bottom .one div.textarea{
+    height: 160px;
+    overflow: hidden;
+}
+section#setting .bottom .one div textarea{
+    width: 90%;
+    height: 100px;
+    display: block;
+    background: transparent;
+    border: none;
+    outline: none; 
+    text-indent: 20px;
+    resize: none;
+}
+section#setting .bottom .two{
+    margin-top: 20px;
+}
+section#setting .bottom .three{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+section#setting .bottom .three div a{
+    width: 95%;
+    display: inline-block;
+    height: 36px;
+}
+section#setting .bottom .three div a i{
+    float: right;
+}

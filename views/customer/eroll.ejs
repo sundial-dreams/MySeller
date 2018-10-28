@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="/resource/fa/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link href="/customer/css/comm.css" rel="stylesheet">
+        <link href="/customer/css/eroll.css" rel="stylesheet">
+
+        <script src='/resource/js/jquery.min.js'></script>
+        <script src='/resource/js/daydream.js'></script>
+        <script src='/customer/js/eroll.js'></script>
+    </head>
+    <body>
+        <section id="eroll">
+            <h3>快速注册</h3>
+            <div class="message-box">
+                  <%=error%>
+                </div>
+            <form method="POST" action="/customer/eroll">
+        
+               <input name="phone" type="text" placeholder="请输入手机号"/>
+               <input name="password" type="password" placeholder="请输入密码"/>
+               <input name="repassword" type="password" placeholder="再次输入密码"/>
+               <button>同意协议并注册</button>
+               <div class="bottom">
+                <a href="/customer/">登入</a>
+               </div>
+               <h5>已阅读并同意以下协议&lt;xxxx&gt;&nbsp;&lt;yyyyy&gt;</h5>
+    
+            </form>
+           
+           
+         </section>   
+    </body>
+</html>

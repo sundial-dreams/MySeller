@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/resource/fa/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="/customer/css/comm.css" rel="stylesheet">
+    <link href="/customer/css/setting.css" rel="stylesheet">
+
+    <script src='/resource/js/jquery.min.js'></script>
+    <script src='/resource/js/daydream.js'></script>
+    <script src='/customer/js/setting.js'></script>
+</head>
+
+<body>
+    <section id="setting">
+        <section class="head">
+            <a href="/customer/user">
+                <i class="fa fa-angle-left"></i>&nbsp;&nbsp;设置</a>
+        </section>
+        <section class="user">
+            <a href="#">
+                <div class="left">
+                    <img src="/image/customer/<%=userData.account%>/head/<%=userData.headimage%>" />
+                    <div class="info">
+                        <h3><%= userData.account%></h3>
+                        <h4><%= userData.nickname%></h4>
+                    </div>
+                </div>
+                <div class="right">
+                    <i class="fa fa-angle-right"></i>
+                </div>
+            </a>
+        </section>
+        <section class="address">
+            <a href="#">我的地址
+                <i class="fa fa-angle-right"></i>
+            </a>
+        </section>
+        <section class="account">
+            <a href="#">账号和安全
+                <i class="fa fa-angle-right"></i>
+            </a>
+        </section>
+        <section class="currency">
+            <a href="#">通用
+                <i class="fa fa-angle-right"></i>
+            </a>
+        </section>
+        <section class="bottom">
+            <a href="/customer/user/exit">退出当前账户</a>
+        </section>
+    </section>
+</body>
+
+</html>
